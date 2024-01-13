@@ -1,8 +1,8 @@
 #!/bin/bash
 
 d="${1-.}"
-f="${2-NS}"
-command='./go-api --path {} --format '"$f"
+f="${2-/pNSmf}"
+command='go-api --path {} --format '"$f"
 find "$d" -type f -name "*.go" | fzf \
 	--reverse \
 	--preview "$command" \

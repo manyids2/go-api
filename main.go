@@ -230,7 +230,7 @@ func HighlightOutput(text string) (string, error) {
 func main() {
 	// Define boolean flags for each component
 	path := flag.String("path", "", "Path to .go file")
-	format := flag.String("format", "picvnsmf", "Apis to print")
+	format := flag.String("format", "/picvnsmf", "Components to print")
 	nohighlight := flag.Bool("nohighlight", false, "Highlight syntax with tree-sitter")
 
 	// Parse the flags
